@@ -24,6 +24,4 @@ const getLastYear = () => `${getCurrentYear - 1}-${getCurrentMonth()}-${getCurre
 const popular_games = `games?key=c1b8f9ec43bf4957a49c9d0eb733b678&dates=${getLastYear()},${getCurrentDate()}&ordering=-rating&page_size=12`;
 
 
-const popularGamesURL = () => `${base_url}${popular_games}`;
-
-console.log(popularGamesURL());
+export const popularGamesURL = () => `${base_url}${popular_games}`;
